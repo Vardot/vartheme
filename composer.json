@@ -1,0 +1,31 @@
+{
+  "name": "drupal/vartheme",
+  "description": "A base theme for Varbase standard websites. Based on Bootstrap theme with Bootstrap 3",
+  "type": "drupal-theme",
+  "homepage": "https://www.drupal.org/project/vartheme",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Vardot",
+      "homepage": "https://www.drupal.org/vardot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/issues/vartheme",
+    "source": "http://cgit.drupalcode.org/vartheme"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": { },
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-4.x": "8.4.x-dev"
+    }
+  }
+}
