@@ -612,4 +612,12 @@ img {
 .maintenance-page #page {
   text-align: center;
 }
-/*# sourceMappingURL=vartheme.base.css.map */
+.hidden-anonymous {
+  display: none !important;
+}
+body.user-logged-in .visible-admin {
+  display: inline-block !important;
+}
+body.user-logged-in .btn.visible-admin {
+  display: inline-block !important;
+}
