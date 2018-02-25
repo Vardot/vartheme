@@ -104,6 +104,12 @@ bs-callouts:
   css:
     component:
       css/component/bs-callouts.component.css: {}
+      
+# Vartheme bootstrap card component.
+card:
+  css:
+    component:
+      css/component/card.component.css: {}
 
 # Vartheme Outside in component library.
 outside-in:

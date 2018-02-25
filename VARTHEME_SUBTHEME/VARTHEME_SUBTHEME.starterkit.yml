@@ -67,6 +67,7 @@ libraries-override:
 # overriden library.
 # ------------------------------------------------------------------------------
 #  vartheme/bs-callouts: VARTHEME_SUBTHEME/bs-callouts
+#  vartheme/card: VARTHEME_SUBTHEME/card
 #  vartheme/outside-in: VARTHEME_SUBTHEME/outside-in
 #  vartheme/edge2edge: VARTHEME_SUBTHEME/edge2edge
 #  vartheme/equal-height: VARTHEME_SUBTHEME/equal-height

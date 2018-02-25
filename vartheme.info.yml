@@ -45,6 +45,7 @@ libraries:
 # Vartheme custom theme, layout, and component libraries.
   - vartheme/navbar-admin
   - vartheme/bs-callouts
+  - vartheme/card
   - vartheme/outside-in
   - vartheme/edge2edge
   - vartheme/equal-height
