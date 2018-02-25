@@ -106,6 +106,12 @@ bootstrap-scripts:
 #    layout:
 #      css/layout/edge2edge.layout.css: {}
 
+# Vartheme Material Equal height layout library.
+#equal-height:
+#  css:
+#    layout:
+#      css/layout/equal-height.layout.css: {}
+
 # Vartheme Bootstrap Callouts component library.
 #bs-callouts:
 #  css:

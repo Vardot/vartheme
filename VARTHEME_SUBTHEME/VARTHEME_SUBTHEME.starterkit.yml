@@ -69,6 +69,7 @@ libraries-override:
 #  vartheme/bs-callouts: VARTHEME_SUBTHEME/bs-callouts
 #  vartheme/outside-in: VARTHEME_SUBTHEME/outside-in
 #  vartheme/edge2edge: VARTHEME_SUBTHEME/edge2edge
+#  vartheme/equal-height: VARTHEME_SUBTHEME/equal-height
 #  vartheme/navbar-admin: VARTHEME_SUBTHEME/navbar-admin
 # ------------------------------------------------------------------------------
 #  vartheme/ajax: VARTHEME_SUBTHEME/ajax

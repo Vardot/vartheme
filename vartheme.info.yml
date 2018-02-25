@@ -47,6 +47,7 @@ libraries:
   - vartheme/bs-callouts
   - vartheme/outside-in
   - vartheme/edge2edge
+  - vartheme/equal-height
   - vartheme/bootstrap-print
   - vartheme/bootstrap-no-spacing
 
