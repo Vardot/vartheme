@@ -104,7 +104,13 @@ bs-callouts:
   css:
     component:
       css/component/bs-callouts.component.css: {}
-      
+
+# Vartheme bootstrap tags component.
+vb-tags:
+  css:
+    component:
+      css/component/vb-tags.component.css: {}
+
 # Vartheme bootstrap card component.
 card:
   css:
