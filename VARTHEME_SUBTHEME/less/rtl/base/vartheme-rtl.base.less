@@ -10,3 +10,10 @@
 // -----------------------------------------------------------------------------
 
 // Insert your Bootstrap (RTL) overrides for bootstrap-rtl library.
+
+// Justify content center.
+[dir="rtl"] .justify-content-center {
+  &.nav-pills > li + li {
+    margin-left: inherit;
+  }
+}
