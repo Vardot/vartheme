@@ -65,7 +65,6 @@ libraries:
   
 # Vartheme Varbase Bootstrap Paragraphs colors theme.
 libraries-override:
-  bootstrap/framework: false
   varbase_bootstrap_paragraphs/vbp-colors: vartheme/vbp-colors
   betterlogin/betterlogin_css: vartheme/betterlogin
 #  bootstrap_library/bootstrap-cdn: false
@@ -76,8 +75,8 @@ libraries-override:
 #    and you want to extend it.
 #libraries-extend:
 #  bootstrap/framework:
-#    - vartheme/bootstrap-styles
-#    - vartheme/bootstrap-scripts
+#    - vartheme/framework
+#    - vartheme/framework-rtl  [Only for RTL websites].
 
 ckeditor_stylesheets:
   - css/base/bootstrap.base.css
