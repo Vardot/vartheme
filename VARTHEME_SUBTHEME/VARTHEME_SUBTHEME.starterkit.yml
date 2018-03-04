@@ -53,6 +53,7 @@ libraries-override:
 # Comment lines to use (RTL) libraries from vartheme.
   vartheme/bootstrap-styles-rtl: false
   vartheme/global-styles-rtl: false
+# Comment lines to use (RTL) libraries from VARTHEME_SUBTHEME.
   VARTHEME_SUBTHEME/bootstrap-styles-rtl: false
   VARTHEME_SUBTHEME/vartheme-styles-rtl: false
   VARTHEME_SUBTHEME/global-styles-rtl: false
@@ -61,13 +62,6 @@ libraries-override:
   varbase_bootstrap_paragraphs/vbp-colors: VARTHEME_SUBTHEME/vbp-colors
   vartheme/vbp-colors: VARTHEME_SUBTHEME/vbp-colors
 #  vartheme/betterlogin: VARTHEME_SUBTHEME/betterlogin
-
-#  Uncomment the following if you want to keep bootstrap/framework
-#    and you want to extend it. you will need to comment bootstrap/framework: false
-#libraries-extend:
-#  bootstrap/framework:
-#    - VARTHEME_SUBTHEME/framework
-#    - VARTHEME_SUBTHEME/framework-rtl
   
 # Uncomment lines to replace, exclude css and js files from vartheme.
 # You will need to copy less/css files from Vartheme to use theme for the
@@ -95,6 +89,13 @@ libraries-override:
 #  vartheme/tabs: VARTHEME_SUBTHEME/tabs
 #  vartheme/toolbar: VARTHEME_SUBTHEME/toolbar
 #  vartheme/autocomplete: VARTHEME_SUBTHEME/autocomplete
+
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme/framework
+#    - VARTHEME_SUBTHEME/framework
 
 ckeditor_stylesheets:
   - css/base/bootstrap.base.css

@@ -1,3 +1,33 @@
+# Vartheme framework as which could be used to extend bootstrap/framework
+#          vartheme/framework = vartheme/bootstrap-styles
+#                             + vartheme/bootstrap-scripts
+#                             + vartheme/global-styles
+#                             + vartheme/global-scripts
+#                             + vartheme/bootstrap-print
+framework:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - vartheme/bootstrap-styles
+    - vartheme/bootstrap-scripts
+    - vartheme/global-styles
+    - vartheme/global-scripts
+    - vartheme/bootstrap-print
+
+# Vartheme framework RTL as which could be used to extend bootstrap/framework
+#          vartheme/framework-rtl = vartheme/bootstrap-styles-rtl
+#                                 + vartheme/global-styles-rtl
+#                                 + vartheme/bootstrap-print-rtl
+framework-rtl:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - vartheme/bootstrap-styles-rtl
+    - vartheme/global-styles-rtl
+    - vartheme/bootstrap-print-rtl
+
 # Vartheme global styles library.
 global-styles:
   css:
@@ -55,51 +85,6 @@ bootstrap-scripts:
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
     bootstrap/js/transition.js: {}
-
-# Vartheme framework as which could be used to extend bootstrap/framework
-#          vartheme/framework = vartheme/bootstrap-styles
-#                             + vartheme/global-styles
-#                             + vartheme/bootstrap-scripts
-#                             + vartheme/global-scripts           
-framework:
-  css:
-    base:
-      css/base/bootstrap.base.css: {}
-      css/base/vartheme.base.css: {}
-    theme:
-      css/theme/header.theme.css: {}
-      css/theme/content.theme.css: {}
-      css/theme/footer.theme.css: {}
-  js:
-    bootstrap/js/affix.js: {}
-    bootstrap/js/alert.js: {}
-    bootstrap/js/button.js: {}
-    bootstrap/js/carousel.js: {}
-    bootstrap/js/collapse.js: {}
-    bootstrap/js/dropdown.js: {}
-    bootstrap/js/modal.js: {}
-    bootstrap/js/tooltip.js: {}
-    bootstrap/js/popover.js: {}
-    bootstrap/js/scrollspy.js: {}
-    bootstrap/js/tab.js: {}
-    bootstrap/js/transition.js: {}
-    js/script.js: {}
-  dependencies:
-    - core/jquery
-
-# Vartheme framework RTL as which could be used to extend bootstrap/framework
-#          vartheme/framework-rtl = vartheme/global-styles-rtl
-framework-rtl:
-  css:
-    base:
-      css/rtl/base/bootstrap-rtl.base.css: {}
-      css/rtl/base/vartheme-rtl.base.css: {}
-    theme:
-      css/rtl/theme/header-rtl.theme.css: {}
-      css/rtl/theme/content-rtl.theme.css: {}
-      css/rtl/theme/footer-rtl.theme.css: {}
-  dependencies:
-    - core/jquery
 
 # Vartheme Varbase Bootstrap Paragraphs colors theme.
 vbp-colors:
