@@ -62,14 +62,22 @@ libraries:
 
 # Vartheme Better Login theme.
   - vartheme/betterlogin
-
+  
 # Vartheme Varbase Bootstrap Paragraphs colors theme.
 libraries-override:
+  bootstrap/framework: false
   varbase_bootstrap_paragraphs/vbp-colors: vartheme/vbp-colors
   betterlogin/betterlogin_css: vartheme/betterlogin
 #  bootstrap_library/bootstrap-cdn: false
 #  bootstrap_library/bootstrap: false
 #  bootstrap_library/bootstrap-dev: false
+
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme/bootstrap-styles
+#    - vartheme/bootstrap-scripts
 
 ckeditor_stylesheets:
   - css/base/bootstrap.base.css

@@ -41,6 +41,7 @@ libraries:
 # OPTIONALLY: You can choose to remove Vartheme base theme stylesheets and/or
 # Javascript files.
 libraries-override:
+  bootstrap/framework: false
 # Comment lines to keep using libraries from vartheme.
   bootstrap_library/bootstrap-cdn: false
   bootstrap_library/bootstrap: false
@@ -61,6 +62,13 @@ libraries-override:
   varbase_bootstrap_paragraphs/vbp-colors: VARTHEME_SUBTHEME/vbp-colors
   vartheme/vbp-colors: VARTHEME_SUBTHEME/vbp-colors
 #  vartheme/betterlogin: VARTHEME_SUBTHEME/betterlogin
+
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it. you will need to comment bootstrap/framework: false
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme/bootstrap-styles
+#    - vartheme/bootstrap-scripts
   
 # Uncomment lines to replace, exclude css and js files from vartheme.
 # You will need to copy less/css files from Vartheme to use theme for the
