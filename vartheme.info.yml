@@ -3,8 +3,9 @@ type: theme
 base theme: bootstrap
 
 name: Vartheme
-description: Base theme for Vardot standard websites. Based on Bootstrap 3 and less css
+description: 'Base theme for Vardot standard websites. Based on Bootstrap 3 and less css'
 package: 'Varbase'
+version: 8.x-5.x-dev
 
 regions:
   navigation: 'Navigation'
