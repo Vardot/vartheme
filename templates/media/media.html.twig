@@ -20,8 +20,8 @@
     view_mode ? 'media--view-mode-' ~ view_mode.id()|clean_class,
   ]
 %}
-<article{{ attributes.removeClass('contextual-region').addClass(classes) }}>
+<div{{ attributes.removeClass('contextual-region').addClass(classes) }}>
   {% if content %}
     {{ content }}
   {% endif %}
-</article>
+</div>
