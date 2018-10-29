@@ -575,9 +575,6 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 #admin-menu-search .form-control {
   float: auto;
 }
-.form-control {
-  max-width: 400px;
-}
 .form-textarea-wrapper textarea {
   max-width: 100%;
 }
@@ -632,4 +629,7 @@ body.user-logged-in .btn.visible-admin {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+body.path-frontpage h1.page-header {
+  display: none;
 }
