@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0 0 25px;
 }
+#auth-box h1#page-user-login-title,
+#auth-box h1#page-user-password-title,
+#auth-box h1#page-user-register-title,
+#auth-box h1#page-user-reset-title {
+  display: none;
+}
 #auth-box h2.title {
   margin: 0;
   padding: 0 0 15px;
