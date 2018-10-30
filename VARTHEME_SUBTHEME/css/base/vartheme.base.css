@@ -631,5 +631,12 @@ body.user-logged-in .btn.visible-admin {
   flex-wrap: wrap;
 }
 body.path-frontpage h1.page-header {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
