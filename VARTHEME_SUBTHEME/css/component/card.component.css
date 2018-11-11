@@ -33,7 +33,7 @@
 .card-text:last-child {
   margin-bottom: 0;
 }
-.card-link::hover {
+.card-link:hover {
   text-decoration: none;
 }
 .card-link + .card-link {
