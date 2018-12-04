@@ -27,11 +27,11 @@
     }
   },
   "require": {
-    "composer/installers": "^1.5.0",
-    "oomphinc/composer-installers-extender": "^1.1.2",
-    "cweagans/composer-patches": "^1.6.4",
+    "composer/installers": "~1",
+    "oomphinc/composer-installers-extender": "~1",
+    "cweagans/composer-patches": "~1",
     "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/bootstrap": "^3.13"
+    "drupal/bootstrap": "~3"
   },
   "extra": {
     "branch-alias": {
