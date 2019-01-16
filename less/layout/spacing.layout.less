@@ -47,7 +47,14 @@
 				#each-spacer((@iii + 1));
 			} #each-spacer();
 
-      // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+			#each-spacing-property((@ii + 1));
+		} #each-spacing-property();
+
+    // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+		#each-spacing-property(@ii: 1) when (@ii =< length(@spacing-properties)) {
+			@spacing-property: extract(@spacing-properties, @ii);
+			@prop: extract(@spacing-property, 1);
+			@abbrev: extract(@spacing-property, 2);
 			#each-spacer(@iii: 1) when (@iii =< length(@spacers)) {
 				@item: extract(@spacers, @iii);
 				@size: extract(@item, 1);
