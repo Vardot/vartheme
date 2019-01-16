@@ -152,6 +152,12 @@ vbp-colors:
 #    layout:
 #      css/layout/equal-height.layout.css: {}
 
+# Vartheme Spacing layout library.
+#spacing:
+#  css:
+#    layout:
+#      css/layout/spacing.layout.css: {}
+
 # Vartheme Bootstrap Callouts component library.
 #bs-callouts:
 #  css:

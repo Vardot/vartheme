@@ -51,6 +51,7 @@ libraries:
   - vartheme/outside-in
   - vartheme/edge2edge
   - vartheme/equal-height
+  - vartheme/spacing
   - vartheme/bootstrap-print
   - vartheme/bootstrap-no-spacing
 
@@ -87,3 +88,4 @@ ckeditor_stylesheets:
   - css/component/node.component.css
   - css/component/bs-callouts.component.css
   - css/layout/edge2edge.layout.css
+  - css/layout/spacing.layout.css

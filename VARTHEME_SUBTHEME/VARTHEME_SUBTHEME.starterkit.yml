@@ -76,6 +76,7 @@ libraries-override:
 #  vartheme/outside-in: VARTHEME_SUBTHEME/outside-in
 #  vartheme/edge2edge: VARTHEME_SUBTHEME/edge2edge
 #  vartheme/equal-height: VARTHEME_SUBTHEME/equal-height
+#  vartheme/spacing: VARTHEME_SUBTHEME/spacing
 #  vartheme/navbar-admin: VARTHEME_SUBTHEME/navbar-admin
 # ------------------------------------------------------------------------------
 #  vartheme/ajax: VARTHEME_SUBTHEME/ajax
@@ -111,3 +112,4 @@ ckeditor_stylesheets:
   - css/component/node.component.css
   - css/component/bs-callouts.component.css
   - css/layout/edge2edge.layout.css
+  - css/layout/spacing.layout.css

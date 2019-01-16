@@ -127,12 +127,18 @@ edge2edge:
   css:
     layout:
       css/layout/edge2edge.layout.css: {}
-      
+
 # Vartheme Equal height layout library.
 equal-height:
   css:
     layout:
       css/layout/equal-height.layout.css: {}
+
+# Vartheme Spacing layout library.
+spacing:
+  css:
+    layout:
+      css/layout/spacing.layout.css: {}
 
 # Vartheme Bootstrap Callouts component library.
 bs-callouts:

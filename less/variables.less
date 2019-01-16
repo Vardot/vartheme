@@ -919,6 +919,33 @@
 @hero-max-height-sm: 600px;
 
 
+// Grid breakpoints
+// -----------------------------------------------------------------------------
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+@grid-breakpoints:
+	xs ~"@{screen-xs-max}",
+	sm ~"@{screen-sm-min}",
+	md ~"@{screen-md-min}",
+	lg ~"@{screen-lg-min}";
+
+// Spacing
+// -----------------------------------------------------------------------------
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the @spacers map, should you need more variation.
+
+@spacer: 1rem;
+@spacers:
+	0 0,
+	1 (@spacer * 0.25),
+	2 (@spacer * 0.5),
+	3 @spacer,
+	4 (@spacer * 1.5),
+	5 (@spacer * 3);
+
+
 // Footer wrapper background color.
 @footer-wrapper-bg:             #f2f2f2;
 
