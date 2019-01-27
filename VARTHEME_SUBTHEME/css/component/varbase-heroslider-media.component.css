@@ -65,9 +65,3 @@
   justify-content: left;
   flex-flow: wrap;
 }
-.varbase-heroslider-media .slick img,
-.varbase-heroslider-media .slick video,
-.varbase-heroslider-media .slick iframe {
-  width: 100%;
-  object-fit: cover;
-}

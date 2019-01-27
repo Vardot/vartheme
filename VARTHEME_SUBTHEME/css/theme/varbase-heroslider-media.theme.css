@@ -113,6 +113,54 @@
 .varbase-heroslider-media .node--type-varbase-heroslider-media .hero-slide-content .field--name-field-link a:active {
   opacity: 0.7;
 }
+.varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single {
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single {
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single {
+    min-height: 600px;
+    max-height: 600px;
+  }
+}
+.varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single iframe,
+.varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single video {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single iframe,
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single video {
+    top: -150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single iframe,
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single video {
+    top: -300px;
+  }
+}
+.varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .varbase-heroslider-media .node--type-varbase-heroslider-media .field--name-field-media-single img {
+    min-height: 600px;
+    max-height: 600px;
+  }
+}
 .varbase-heroslider-media > .view-empty {
   background-color: #e0e0e0;
   padding: 385px 0 75px;

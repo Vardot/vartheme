@@ -136,6 +136,49 @@
         }
       }
     }
+
+    .field--name-field-media-single {
+      overflow: hidden;
+
+      @media screen and (max-width: @screen-xs-max) {
+        min-height: @hero-min-height-xs;
+        max-height: @hero-max-height-xs;
+      }
+
+      @media screen and (min-width: @screen-sm-min) {
+        min-height: @hero-min-height-sm;
+        max-height: @hero-max-height-sm;
+      }
+
+      iframe,
+      video {
+        width: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: @screen-xs-max) {
+          top: floor(-(@hero-max-height-xs / 2));
+        }
+
+        @media screen and (min-width: @screen-sm-min) {
+          top: floor(-(@hero-max-height-sm / 2));
+        }
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: @screen-xs-max) {
+          min-height: @hero-min-height-xs;
+          max-height: @hero-max-height-xs;
+        }
+
+        @media screen and (min-width: @screen-sm-min) {
+          min-height: @hero-min-height-sm;
+          max-height: @hero-max-height-sm;
+        }
+      }
+    }
   }
 
   &> .view-empty {
