@@ -51,7 +51,7 @@ libraries-override:
   vartheme/bootstrap-styles: false
   vartheme/bootstrap-scripts: false
   vartheme/global-styles: false
-  vartheme/global-scripts: false
+#  vartheme/global-scripts: false
 
 # Comment lines to use (RTL) libraries from vartheme.
   vartheme/bootstrap-styles-rtl: false
