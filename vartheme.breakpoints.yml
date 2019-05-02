@@ -1,6 +1,6 @@
 bootstrap.screen-xs-max:
   label: screen-xs-max
-  mediaQuery: 'all and (max-width: 575.98px)'
+  mediaQuery: 'all and (max-width: 767px)'
   weight: 1
   group: bootstrap
   multipliers:
@@ -9,7 +9,7 @@ bootstrap.screen-xs-max:
 
 bootstrap.screen-sm-min:
   label: screen-sm-min
-  mediaQuery: 'all and (min-width: 576px)'
+  mediaQuery: 'all and (min-width: 768px)'
   weight: 2
   group: bootstrap
   multipliers:
@@ -18,7 +18,7 @@ bootstrap.screen-sm-min:
 
 bootstrap.screen-sm-max:
   label: screen-sm-max
-  mediaQuery: 'all and (max-width: 767.98px)'
+  mediaQuery: 'all and (max-width: 991px)'
   weight: 3
   group: bootstrap
   multipliers:
@@ -27,7 +27,7 @@ bootstrap.screen-sm-max:
 
 bootstrap.screen-md-min:
   label: screen-md-min
-  mediaQuery: 'all and (min-width: 768px)'
+  mediaQuery: 'all and (min-width: 992px)'
   weight: 4
   group: bootstrap
   multipliers:
@@ -36,36 +36,16 @@ bootstrap.screen-md-min:
 
 bootstrap.screen-md-max:
   label: screen-md-max
-  mediaQuery: 'all and (max-width: 991.98px)'
+  mediaQuery: 'all and (max-width: 1199px)'
   weight: 5
-  group: bootstrap
   multipliers:
     - 1x
     - 2x
 
 bootstrap.screen-lg-min:
   label: screen-lg-min
-  mediaQuery: 'all and (min-width: 992px)'
-  weight: 6
-  group: bootstrap
-  multipliers:
-    - 1x
-    - 2x
-
-bootstrap.screen-lg-max:
-  label: screen-md-max
-  mediaQuery: 'all and (max-width: 1199.98px)'
-  weight: 7
-  group: bootstrap
-  multipliers:
-    - 1x
-    - 2x
-
-bootstrap.screen-xl-min:
-  label: screen-lg-min
   mediaQuery: 'all and (min-width: 1200px)'
-  weight: 8
-  group: bootstrap
+  weight: 6
   multipliers:
     - 1x
     - 2x
