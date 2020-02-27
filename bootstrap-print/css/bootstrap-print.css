@@ -9,7 +9,18 @@
  *    - twbs/bootstrap: https://github.com/twbs/bootstrap
  */
 @media print {
-  .col-p-1, .col-p-2, .col-p-3, .col-p-4, .col-p-5, .col-p-6, .col-p-7, .col-p-8, .col-p-9, .col-p-10, .col-p-11, .col-p-12 {
+  .col-p-1,
+  .col-p-2,
+  .col-p-3,
+  .col-p-4,
+  .col-p-5,
+  .col-p-6,
+  .col-p-7,
+  .col-p-8,
+  .col-p-9,
+  .col-p-10,
+  .col-p-11,
+  .col-p-12 {
     float: left;
     position: relative;
     min-height: 1px;
