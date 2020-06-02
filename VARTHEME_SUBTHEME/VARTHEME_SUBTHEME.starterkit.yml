@@ -1,11 +1,8 @@
-core: 8.x
-type: theme
-base theme: vartheme
-
 name: 'Vartheme Sub-Theme (LESS)'
 description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+type: theme
+base theme: vartheme
 package: 'Varbase'
-
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'

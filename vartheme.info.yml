@@ -1,12 +1,8 @@
-core: 8.x
-type: theme
-base theme: bootstrap
-
 name: Vartheme
 description: 'Base theme for Vardot standard websites. Based on Bootstrap 3 and less css'
+type: theme
+base theme: bootstrap
 package: 'Varbase'
-project: vartheme
-version: 8.x-6.x-dev
 core_version_requirement: ^8 || ^9
 regions:
   navigation: 'Navigation'
