@@ -3,6 +3,7 @@ description: 'Uses the Bootstrap framework LESS source files and must be compile
 type: theme
 base theme: vartheme
 package: 'Varbase'
+core_version_requirement: ^8 || ^9
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
