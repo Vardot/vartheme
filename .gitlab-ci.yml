@@ -1,0 +1,63 @@
+################################################################################
+# GitLab CI for the Varbase Theme (Bootstrap 3 - LESS).
+#
+# Basic testing + linting via the official drupal/gitlab_templates: the standard
+# Drupal CI validation jobs (composer, composer-lint, cspell, phpcs, phpstan)
+# build the theme against Drupal core and lint the PHP / YAML / spelling. This is
+# a base theme (Bootstrap 3 + LESS) with no PHPUnit/Nightwatch suite, so the test
+# jobs are skipped. eslint / stylelint are disabled too: the JS is vendored
+# Bootstrap 3 and the CSS is compiled-from-LESS output — neither is hand-authored
+# source, so linting them is not meaningful.
+#
+# Every validate job that runs gates strictly (allow_failure:false) per Vardot
+# policy; nothing is masked with `|| true`.
+################################################################################
+
+include:
+  - project: $_GITLAB_TEMPLATES_REPO
+    ref: $_GITLAB_TEMPLATES_REF
+    file:
+      - "/includes/include.drupalci.main.yml"
+      - "/includes/include.drupalci.variables.yml"
+      - "/includes/include.drupalci.workflows.yml"
+
+variables:
+  PROJECT_TYPE: "theme"
+  COMPOSER_FLAGS: "--no-strict-lock"
+  COMPOSER_MEMORY_LIMIT: "-1"
+  # Make EVERY drupalci validate job blocking (stylelint and a few others
+  # default to allow_failure:true).
+  _ALL_VALIDATE_ALLOW_FAILURE: "0"
+  # No automated PHPUnit / Nightwatch tests ship with this base theme.
+  SKIP_PHPUNIT: "1"
+  SKIP_NIGHTWATCH: "1"
+  # Vendored Bootstrap 3 JS + compiled-from-LESS CSS — not lintable source.
+  SKIP_ESLINT: "1"
+  SKIP_STYLELINT: "1"
+
+# Run for merge requests, branch pushes, and tags.
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+# = Validate stage (blocking) =
+composer-lint:
+  allow_failure: false
+cspell:
+  allow_failure: false
+phpcs:
+  allow_failure: false
+phpstan:
+  allow_failure: false
+
+# eslint / stylelint do not apply to this theme (vendored + compiled assets).
+# SKIP_ESLINT / SKIP_STYLELINT above gate them out; force-disable here too so the
+# jobs never run regardless of template rule changes.
+eslint:
+  rules:
+    - when: never
+stylelint:
+  rules:
+    - when: never

@@ -4,7 +4,6 @@
   "type": "drupal-theme",
   "homepage": "https://www.drupal.org/project/vartheme",
   "license": "GPL-2.0-or-later",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Vardot",
@@ -16,29 +15,8 @@
     "issues": "http://drupal.org/project/issues/vartheme",
     "source": "http://cgit.drupalcode.org/vartheme"
   },
-  "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    "assets": {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
-    }
-  },
   "require": {
-    "composer/installers": "~2",
-    "oomphinc/composer-installers-extender": "~2",
-    "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8 || ~9 || ~10",
-    "drupal/bootstrap": "~3.0"
-  },
-  "extra": {
-    "installer-types": [
-      "bower-asset",
-      "npm-asset"
-    ],
-    "enable-patching": true,
-    "composer-exit-on-patch-failure": true
+    "drupal/core": "^10 || ^11",
+    "drupal/bootstrap": "^3.40"
   }
 }

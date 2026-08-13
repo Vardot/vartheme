@@ -3,7 +3,7 @@ description: 'Base theme for Vardot standard websites. Based on Bootstrap 3 and 
 type: theme
 base theme: bootstrap
 package: 'Varbase'
-core_version_requirement: ~8 || ~9 || ~10
+core_version_requirement: ^10 || ^11
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
@@ -23,7 +23,7 @@ libraries:
   - vartheme/bootstrap-styles
   - vartheme/bootstrap-scripts
 
-# Boostrap component libraries.
+# Bootstrap component libraries.
   - vartheme/ajax
   - vartheme/alert
   - vartheme/field

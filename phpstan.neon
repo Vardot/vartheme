@@ -1,0 +1,21 @@
+parameters:
+  level: 0
+  reportUnmatchedIgnoredErrors: false
+  fileExtensions:
+    - php
+    - module
+    - inc
+    - install
+    - theme
+    - profile
+  excludePaths:
+    # The starter kit is a template of VARTHEME_SUBTHEME placeholder tokens that
+    # are not valid PHP until the kit is generated.
+    - */VARTHEME_SUBTHEME/*
+  ignoreErrors:
+    - '#^Unsafe usage of new static#'
+    # theme_get_setting() is deprecated in drupal:11.3.0 and removed in
+    # drupal:13.0.0, but its replacement service only exists from 11.3+. This
+    # theme still supports Drupal ^10, where theme_get_setting() is the correct
+    # cross-version API, so keep it until the ^10 constraint is dropped.
+    - '#Call to deprecated function theme_get_setting\(\)#'

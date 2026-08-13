@@ -76,12 +76,12 @@
   <div class="row">
     {# Footer #}
     {%
-      set foter_classes = ['col-sm-12',
+      set footer_classes = ['col-sm-12',
         'clearfix',
         'text-center'
       ]
     %}
-    <section{{ content_attributes.addClass(foter_classes) }}>
+    <section{{ content_attributes.addClass(footer_classes) }}>
       <div class="footer-credits">
         <p>&copy; {{ "now"|date("Y") }} {{ site_name }}.  {{ 'All rights reserved.'|t }}</p>
       </div>
